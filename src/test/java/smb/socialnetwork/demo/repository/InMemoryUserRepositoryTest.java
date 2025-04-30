@@ -21,7 +21,7 @@ public class InMemoryUserRepositoryTest {
     public void findByUsernameTest() {
         User user = new User("username");
         inMemoryUserRepository.save(user);
-        Optional<User> inMemoryUser = inMemoryUserRepository.findByUsername("Max");
+        Optional<User> inMemoryUser = inMemoryUserRepository.findByUsername("username");
         assertNotNull(inMemoryUser);
         assertTrue(inMemoryUser.isPresent());
         assertEquals("username", inMemoryUser.get().getUsername());
@@ -29,7 +29,8 @@ public class InMemoryUserRepositoryTest {
 
     @Test
     public void nonExistingUserTest() {
-
+        Optional<User> inMemoryUser = inMemoryUserRepository.findByUsername("username");
+        assertTrue(inMemoryUser.isEmpty());
     }
 
 }
