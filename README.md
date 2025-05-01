@@ -2,10 +2,9 @@
 
 ## Social Network Demo Project
 
-@author: Sandra Marcos Bonet
+<small>@author: Sandra Marcos Bonet</small>
 
 The exercise consists of implementing a console-based social networking application satisfying the scenarios below:
-*Scenarios*
 
 *Posting*: Anyone can publish messages on their personal timeline:
 
@@ -57,6 +56,7 @@ Details:
 <br/>
 
 ### Comments
+
 - Development has followed an iterative approach, beginning with the project skeleton and progressing through the model,
     the repository (data management), business logic, and I/O interaction layers.
 - Test-Driven Development (TDD) was applied in the initial commits, following the cycle of writing a test, 
@@ -64,14 +64,5 @@ Details:
 - The implementation emphasizes separation of concerns and follows a layered architecture.
 
 Tasks:
-- [x] Written tests for: User, UserService and UserRepository
-- [ ] Write tests for: Post, PostRepository, PostService, Commands and CommandParser
-
-
-
-
-Tasks:
-
-Tests written for: `User`, `UserService`, and `UserRepository`
-
-To do: Write tests for `Post`, `PostRepository`, `PostService`, Commands, and `CommandParser`
+- [x] Tests written for: `User`, `UserService`, and `UserRepository`
+- [ ] To do: Write tests for `Post`, `PostRepository`, `PostService`, Commands, and `CommandParser`
